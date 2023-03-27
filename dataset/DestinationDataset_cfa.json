@@ -11,6 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "test.csv",
+				"folderPath": "Datasets",
 				"container": "historicaldata"
 			}
 		}
