@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "test.csv",
+				"fileName": "HistoricalData_1.csv",
+				"folderPath": "Datasets",
 				"container": "historicaldata"
 			}
 		}
