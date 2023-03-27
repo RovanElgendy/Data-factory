@@ -1,0 +1,9 @@
+{
+	"name": "Rc339",
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f0d133e4-126b-4da9-9404-16d3c1653681",
+		"tenantId": "0d750ad7-8f50-41af-9cae-c109332bf13a"
+	}
+}
