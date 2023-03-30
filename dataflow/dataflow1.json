@@ -15,7 +15,7 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "derivedColumn1"
+					"name": "YearExtraction"
 				}
 			],
 			"scriptLines": [
@@ -27,7 +27,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 derive(Year = toInteger(trim(right(Column_2,6),'()'))) ~> derivedColumn1"
+				"source1 derive(Year = toInteger(trim(right(Column_2,6),'()'))) ~> YearExtraction"
 			]
 		}
 	}
