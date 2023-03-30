@@ -33,7 +33,7 @@
 				"          Column_2 as string,",
 				"          Column_3 as string",
 				"     ),",
-				"     allowSchemaDrift: false,",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     partitionBy('hash', 1)) ~> moviesinput",
