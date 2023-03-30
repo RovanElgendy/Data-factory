@@ -23,8 +23,7 @@
 			],
 			"transformations": [
 				{
-					"name": "YearExtraction",
-					"description": "Creating/updating the columns 'movieId, title, genres, Year, title'"
+					"name": "YearExtraction"
 				}
 			],
 			"scriptLines": [
