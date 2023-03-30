@@ -39,6 +39,7 @@
 				"          title = toString(left(Column_2,length(Column_2)-6))) ~> YearExtraction",
 				"YearExtraction sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     partitionFileNames:['moviesfinal.csv'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
