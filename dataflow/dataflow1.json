@@ -15,8 +15,7 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "YearExtraction",
-					"description": "Creating/updating the columns 'movieId, title, genres, Year'"
+					"name": "Yearextraction"
 				}
 			],
 			"scriptLines": [
@@ -28,8 +27,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> moviesinput",
-				"moviesinput derive(Year = toInteger(trim(right(title,6),'()')),",
-				"          title = toString(left(title,length(title)-6))) ~> YearExtraction"
+				"moviesinput derive(Year = toInteger(trim(right(title,6),'()'))) ~> Yearextraction"
 			]
 		}
 	}
