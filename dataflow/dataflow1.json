@@ -35,6 +35,7 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     inferDriftedColumnTypes: true,",
 				"     ignoreNoFilesFound: false,",
 				"     partitionBy('hash', 1)) ~> moviesinput",
 				"moviesinput derive(Year = toInteger(trim(right(title,6),'()')),",
