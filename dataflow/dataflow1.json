@@ -40,12 +40,11 @@
 				"YearExtraction sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     partitionFileNames:['moviesfinal.csv'],",
-				"     umask: 0022,",
+				"     umask: 0222,",
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true,",
-				"     partitionBy('hash', 1)) ~> moviesoutput"
+				"     skipDuplicateMapOutputs: true) ~> moviesoutput"
 			]
 		}
 	}
